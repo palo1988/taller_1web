@@ -164,7 +164,6 @@ pre code {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  display: inline-block;
   line-height: 100%;
   padding: 0.7em;
   text-decoration: none;
@@ -175,12 +174,25 @@ pre code {
   font-weight: bold;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #4d90fe;
-  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
-  background-image: -webkit-moz-gradient(top, #4d90fe, #4787ed);
-  background-image: linear-gradient(top, #4d90fe, #4787ed);
-  border: 1px solid #3079ed;
-  color: #fff;
+  background-color: rgba(
+    85,
+    111,
+    153,
+    0.8
+  ); /* Transparencia añadida al color de fondo */
+  border: 1px solid #7a89a1;
+  color: #181717;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+.btn:hover {
+  background-color: rgba(
+    77,
+    144,
+    254,
+    1
+  ); /* Transparencia añadida al color de fondo al pasar el cursor */
 }
 
 .reload:hover {
@@ -357,12 +369,68 @@ pre code {
     center center;
   background-size: cover;
 }
+
 .tps-section:nth-child(5n + 1) .tps-wrapper {
-  background: url(https://cintasdearchivo.files.wordpress.com/2017/01/doors-app-screen-shot-1.jpg?w=1200)
+  background: url(/assets/images/fdoBlanco.jpg) center center;
+  background-size: cover;
+}
+.tps-section:nth-child(6n + 1) .tps-wrapper {
+  background: url(https://cintasdearchivo.files.wordpress.com/2017/01/doors-app-screen-shot-1.jpg?w=600)
     center center;
   background-size: cover;
 }
+
 .header {
   overflow: hidden;
   clear: both;
+}
+
+/* Estilos para botones transparentes */
+.transparent-btn {
+  background-color: transparent; /* Establece el color de fondo transparente */
+  border: none; /* Elimina el borde del botón */
+  color: #fff; /* Establece el color del texto del botón */
+  padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  display: block; /* Hace que el botón sea un elemento de bloque */
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+.transparent-btn:hover {
+  opacity: 0.8; /* Reduce la opacidad del botón al pasar el cursor sobre él */
+}
+/*estilos tabla*/
+
+/* Estilos para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilos para las celdas del encabezado de la tabla */
+.table th {
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+  background-color: #f2f2f2; /* Color de fondo del encabezado */
+  border-bottom: 2px solid #ddd; /* Borde inferior */
+}
+
+/* Estilos para las celdas de datos de la tabla */
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+/* Estilos para el pie de tabla */
+.table tfoot td {
+  font-weight: bold;
+  background-color: #f2f2f2; /* Color de fondo del pie */
+  border-top: 2px solid #ddd; /* Borde superior */
+}
+
+/* Estilos para la fila de total */
+.table tfoot td#total {
+  text-align: right; /* Alineación del texto a la derecha */
 }

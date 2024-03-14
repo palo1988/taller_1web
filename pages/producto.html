@@ -57,42 +57,79 @@
             <div class="main">
                 <section class="page1">
                     <div class="page_container">
-                        <h1><a href="#">The Doors<br>
-                                <small>65 USD</small></a></h1>
+                        <button id="The Doors" onclick="agregarProductos('The Doors',59)" class="btn btn-success">The
+                            Doors-
+                            59</button>
                     </div>
                 </section>
 
                 <section class="page2">
                     <div class="page_container">
-                        <h1><a href="#">Frusciante <br>
-                                <small>32USD</small></a></h1>
+                        <button id="Frusciante" onclick="agregarProductos('1','Frusciante',65,)"
+                            class="btn btn-success">Frusciante-
+                            65</button>
                     </div>
                 </section>
 
                 <section class="page3">
                     <div class="page_container">
-                        <h1><a href="#">Nirvana<br>
-                                <small>37 USD</small></a></h1>
+                        <button id="nirvana" onclick="agregarProductos('2','Nirvana',45)"
+                            class="btn btn-success">nirvana-
+                            45</button>
                     </div>
                 </section>
 
                 <section class="page4">
                     <div class="page_container">
-                        <h1><a href="#">Dark side of the Moon<br>
-                                <small>48 USD</small></a></h1>
+                        <button id="pinkfloyd" onclick="agregarProductos('3','Pink floyd-Dark side of the Moon',39)"
+                            class="btn btn-success">
+                            <img src="" alt="" class="btnCarrito">pink floyd- 38</button>
+                    </div>
+                </section>
+                <section class="page5">
+                    <div class="page_container d-flex justify-content-center align-items-center">
+                        <button id="pinkfloyd" onclick="agregarProductos('4','Pink floyd-TheWall',38)"
+                            class="btn transparent-btn">
+                            <img src="" alt="" class="btnCarrito">Pink Floyd - 38
+                        </button>
+                    </div>
+                </section>
+                <section class="page6">
+                    <div class="page_container d-flex justify-content-center align-items-center">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="5" style="text-align: center; font-size: 200%;">Carrito</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Precio/u</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Total</th>
+                                    <th></th>
+                                    <th></th>
+                                    <td id="total">0.00</td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </section>
 
-                <section class="page5">
-                    <div class="page_container">
-                        <h1><a href="#">The Wall<br>
-                                <small>75 USD</small></a></h1>
-                    </div>
-                </section>
 
 
             </div>
         </div>
+        <!--carrito-->
+
+
 
 
     </main>

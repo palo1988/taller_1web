@@ -20,3 +20,6 @@ button {
   margin: 4px 2px; /* Margen exterior */
   cursor: pointer; /* Cursor al pasar por encima */
 }
+::placeholder {
+  color: blue;
+}
